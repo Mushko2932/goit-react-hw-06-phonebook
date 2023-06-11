@@ -1,9 +1,9 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { Form, FormLabel, FormBtn, Field } from './ContactsForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { getContacts } from 'redux/selectors';
 import Notiflix from 'notiflix';
+import { Form, FormLabel, FormBtn, Field } from './ContactsForm.styled';
+import { getContacts } from 'redux/selectors';
 import { addContact } from 'redux/contactSlice';
 
 const ContactShema = Yup.object().shape({
